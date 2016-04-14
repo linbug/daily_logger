@@ -1,6 +1,6 @@
 # daily_logger
 
-For those that want to keep track of their daily work goals in markdown format, this is a simple script that opens a daily/weekly markdown file from the command line, named with the appropriate day's date.  
+For those that want to keep track of their daily work goals in markdown format, this is a simple script that opens a daily/weekly markdown file from the command line, saved under the appropriate day's date.  
 
 ## Usage
 
