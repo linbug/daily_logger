@@ -1,5 +1,11 @@
-#script to open a daily log file from the command line
-# one. Get today's date to. See if this file already exists 3. If file doesn't exist make it and Open it, otherwise make file
+#A simple script to open a daily/weekly log file from the command line
+
+# Order of events:
+# -1. Get today's date
+# -2. See if this file already exists
+# -3. If this file doesn't already exist, make it
+# -4. Open the file
+# -5. If today is a Sunday, open the week log file too
 
 import datetime
 import sys
@@ -28,7 +34,7 @@ def open_weekfile(path,date):
     print('Have a fantabulous week! :D')
 
 def open_datefile():
-    path = '/Users/Lin/Dropbox/daily_plans_2016/'
+    path = 'path/to/files'
     date, weekday = get_date_string()
     open_dayfile(path,date)
     if weekday == 0:
