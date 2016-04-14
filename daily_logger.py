@@ -34,7 +34,7 @@ def open_weekfile(path,date):
     print('Have a fantabulous week! :D')
 
 def open_datefile():
-    path = 'path/to/files'
+    path = 'path/to/files' # edit this path
     date, weekday = get_date_string()
     open_dayfile(path,date)
     if weekday == 0:
