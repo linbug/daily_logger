@@ -7,6 +7,9 @@
 # -4. Open the file
 # -5. If today is a Sunday, open the week log file too
 
+path = 'path/to/files' # edit this path
+text_editor = 'subl ' # edit if required (e.g. 'vim '/'nano '). NB. the trailing space is required
+
 import datetime
 import sys
 import os.path
@@ -34,7 +37,6 @@ def open_weekfile(path,date):
     print('Have a fantabulous week! :D')
 
 def open_datefile():
-    path = 'path/to/files' # edit this path
     date, weekday = get_date_string()
     open_dayfile(path,date)
     if weekday == 0:
